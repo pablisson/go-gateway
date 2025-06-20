@@ -49,5 +49,3 @@ func (a *Account) AddBalance(amount float64) {
 	a.Balance += amount
 	a.UpdatedAt = time.Now()
 }
-
-func (a *Account) GetBalance() float64 {
