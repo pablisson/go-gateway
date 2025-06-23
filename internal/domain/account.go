@@ -23,7 +23,7 @@ type Account struct {
 
 
 
-func NewAccount(name, email string) (*Account, error) {
+func NewAccount(name, email string) (*Account) {
 	account := &Account{
 		ID: uuid.New().String(),
 		Name: name,
@@ -33,7 +33,7 @@ func NewAccount(name, email string) (*Account, error) {
 		CreatedAt: time.Now(),
 		UpdatedAt: time.Now(),
 	}
-	return account, nil
+	return account
 }
 
 func generateAPIKey() string {
