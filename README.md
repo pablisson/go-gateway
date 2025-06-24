@@ -1,1 +1,1 @@
-# go-geteway
+# go-gateway
